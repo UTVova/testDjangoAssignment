@@ -8,6 +8,7 @@ authors = ["UTVova <utvova1@gmail.com>"]
 python = "3.9"
 djangorestframework = "^3.12.1"
 Django = "^2"
+django-stdimage = "^5.1.1"
 
 [tool.poetry.dev-dependencies]
 pre-commit = "^2.8.2"

@@ -140,3 +140,4 @@ cython_debug/
 .python-version
 poetry.toml
 .idea
+src/uploads/
