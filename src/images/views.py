@@ -43,3 +43,8 @@ class ImageViewSet(
         serializer.is_valid(raise_exception=True)
         image_serializers = self.perform_create(serializer)
         return Response({"files": [s.data for s in image_serializers]}, status=status.HTTP_201_CREATED)
+
+    def perform_destroy(self, instance: Image):
+        # just added removing of file in filesystem
+        instance.file.delete(save=False)
+        instance.delete()
